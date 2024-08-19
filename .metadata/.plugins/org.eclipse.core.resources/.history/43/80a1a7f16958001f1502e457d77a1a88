@@ -1,0 +1,42 @@
+package ust.com.samples;
+
+@FunctionalInterface
+interface TwoOperation
+{
+	double put(double x,double y);
+	
+}
+
+@FunctionalInterface
+interface Printer
+{
+	void print(String message);
+}
+
+public class CalculatorLamdaDemo {
+	
+	public static void main(String[] args)
+	{
+
+	TwoOperation add=(x,y)-> x+y;
+	TwoOperation subtract=(x,y)-> x-y;
+	TwoOperation mult=(x,y)-> x*y;
+	TwoOperation divide=(x,y)->x/y;
+	/*{
+		if(y==0)
+			System.out.println("Division by zero is not possible");
+		else
+			x/y;
+	}*/
+	TwoOperation abs=(x,y)-> x>=0?x:-x;
+	
+	Printer printObj=message->System.out.println(message);
+	
+	printObj.print("Addition:"+add.put(3.4,2.5));
+	printObj.print("Subtraction:"+subtract.put(3.4,2.5));
+	printObj.print("Multiplication:"+mult.put(3.4,2.5));
+	printObj.print("Division:"+divide.put(3.4,2.5));
+	printObj.print("Absolute value:"+abs.put(-9.0,0));
+   
+	}
+}

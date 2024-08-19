@@ -1,0 +1,16 @@
+package ust.com.lambda;
+
+
+public class AdditionDemo {
+	
+	public static void main(String[] args)
+	{
+		IBinaryOperation add=(x,y)-> x+y;
+		IBinaryOperation sub=(x,y)-> x-y;
+		
+		IPrinter pobj=message->System.out.println(message);
+		pobj.getPrint("Addition result:"+add.Operate(5,3));
+		pobj.getPrint("Subtraction result:"+sub.Operate(5,3));
+	}
+
+}

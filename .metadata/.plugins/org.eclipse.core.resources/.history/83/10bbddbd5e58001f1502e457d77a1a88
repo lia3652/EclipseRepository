@@ -1,0 +1,29 @@
+package ust.com.samples;
+
+public class CalculatorLamdaDemo {
+	
+	(double x,double y)->
+	{
+		
+		 x+y;
+	     
+	}
+	
+	(double x,double y)
+	{
+		
+	    x-y;
+      
+	}
+
+	(double x,double y)
+	{
+		
+		x*y;
+		
+      
+		
+	}
+
+
+}

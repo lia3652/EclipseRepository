@@ -1,0 +1,7 @@
+package ust.com.lambdasample;
+
+@FunctionalInterface
+interface IPrinter
+{
+	void print(String message);
+}

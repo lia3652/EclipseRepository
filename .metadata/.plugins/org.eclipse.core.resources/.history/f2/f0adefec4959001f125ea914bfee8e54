@@ -1,0 +1,11 @@
+package ust.com.lambda;
+
+public class AdditionDemo {
+	
+	public static void main(String[] args)
+	{
+		IBinaryOperation bop=(x,y)-> x+y;
+		IPrinter pobj=message->System.out.println(message);
+	}
+
+}

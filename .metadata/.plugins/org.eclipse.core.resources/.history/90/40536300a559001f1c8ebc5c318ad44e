@@ -1,0 +1,5 @@
+package ust.com.samples;
+
+public interface ABCalculate {
+
+}

@@ -1,0 +1,36 @@
+package ust.com.samples;
+
+public class CalculatorLamdaDemo {
+	
+	//Lambda expression
+	
+	(double x,double y)->
+	{
+		
+		 x+y;
+	     
+	}
+	
+	(double a,double b)->
+	{
+		
+	    a-b;
+      
+	}
+
+	(double c,double d)->
+	{
+		
+		c*d;
+		
+      
+		
+	}
+	
+	()->
+	{
+		System.out.println("greet");
+	}
+
+
+}

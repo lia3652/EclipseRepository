@@ -1,0 +1,33 @@
+package ust.com.gitsession;
+
+import java.util.Scanner;
+
+public class StringFunctionDemo {
+	
+	public static void getStringReversed(String str)
+	{
+		StringBuilder sb=new StringBuilder(str);
+		sb.reverse();
+		System.out.println(sb.toString());
+		
+	}
+	
+	public static void getFirstLetter(String str)
+	{
+		String str1=str.substring(0,1).toUpperCase()+ str.substring(1,str.length());
+		System.out.println(str1);
+			
+		
+	}
+	public static void main(String[] args)
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter a string");
+		String str=s.next();
+		getStringReversed(str);
+		getFirstLetter(str);
+		
+		
+	}
+
+}

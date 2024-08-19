@@ -1,0 +1,27 @@
+package ust.com.streamapi;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
+
+
+public class FruitsDemo {
+	
+	public static void getUpperCase(List<String >fruits)
+	{
+		
+	}
+	
+	public static void  getSelectFruit(List<String> fruits)
+	{
+		
+	}
+	
+
+	public static void main(String[] args)
+	{
+		List<String> fruits= Arrays.asList("apple","banana","orange","orange");
+		getUpperCase(fruits);
+		getSelectFruit(fruits);
+
+}
+}

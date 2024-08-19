@@ -1,0 +1,37 @@
+package ust.com.stream;
+
+import java.util.Scanner;
+
+public class ArrayDemo {
+	
+	public static void main(String[] args)
+	{
+		int maxvalue=0;
+		int size=0;
+		Scanner scn=new Scanner(System.in);
+		System.out.println("Enter size of array");
+		size=scn.nextInt();
+		int[] arr=new int[size];
+		System.out.println("Enter elements of array");
+		for(int i=0;i<size;i++)
+		{
+			arr[i]=scn.nextInt();
+		}
+		
+		System.out.println("Array Elements");
+		for(int j: arr)
+			System.out.print(arr[j]);
+		
+		System.out.println("Maximum Value in Array: ");
+		for(int k=0;k<size;k++)
+		{
+			if(arr[k]>maxvalue)
+				maxvalue=arr[k];
+		}
+		
+		System.out.print(maxvalue);
+	
+		
+	}
+
+}

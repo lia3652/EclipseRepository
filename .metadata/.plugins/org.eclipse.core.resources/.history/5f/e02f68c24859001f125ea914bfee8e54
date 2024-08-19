@@ -1,0 +1,10 @@
+package ust.com.lambda;
+
+public class AdditionDemo {
+	
+	public static void main(String[] args)
+	{
+		
+	}
+
+}

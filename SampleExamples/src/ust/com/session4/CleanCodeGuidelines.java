@@ -1,0 +1,155 @@
+package ust.com.session4;
+
+
+
+import java.util.ArrayList;
+
+public class CleanCodeGuidelines {/*
+
+    //line 37 methods
+    private static void validateUser(){
+
+    }
+    private static void updateUser(){}
+    private static void sendNotification(){
+
+    }
+
+    public void SaveUserDetails(){
+        //inconsistent camel case
+    }
+
+    public  void saveUserDetails(){
+        //consistent camel case
+    }
+
+    static class User{
+
+        int userId;
+        String name;
+
+        public void setStatus(String status){
+            System.out.println(status);
+        }
+    }
+
+    public int calculateTotal(){ int[] items =new int[10];int total=0; for(int i=0;i<items.length;i++){total+=items[i];} return total;}
+
+    public int calculateTotalRefractored(){
+
+        int[] items =new int[10];
+        int total=0;
+
+        for(int index=0;index<items.length;index++){
+
+            total+=items[index];
+        }
+        return total;
+    }
+
+
+    public void createUser(String name, int age, String email, String address, String phoneNumber){
+        //avoid long parameters like this
+    }
+
+    public void createUserRefractored(UserDetails userDetails){
+
+        //Use this rather
+        // use getter and setter to perform operation
+    }
+
+    class UserDetails{
+        private String name;
+        private int age;
+        private String email;
+        private String address;
+        private String phoneNumber;
+
+        //parameterised constructor, getter and setter
+    }
+
+    public static void main(String[] args) {
+
+        //1.Use Meaningful and descriptive names
+        int d; //what does this d stand for
+        //refractored
+        int daysSinceLastLogin; //intuitive
+
+        //2. avoid magic numbers and strings
+        int balance=100;
+        double interestPayout = balance *0.05; // what does 0.05 stand for
+
+        //refractored
+        final double INTEREST_RATE= 0.05;
+        double interestPayoutCorrected = balance*INTEREST_RATE;
+
+        //3. write small and focused method
+        //bad example
+        public void processUser(){
+            //validate user
+            //update user
+            //send notification
+        }
+
+        //refractored
+        public void processUserRefractored() {
+            validateUser();
+            updateUser();
+            sendNotification();
+        }
+
+        //4. follow consistent naming convention
+        // var: camel case, const: ALL CAPS, database: snake case
+        //refer line 14 for bad example
+        //refer line 19 for refractored example
+
+        //5. Use comments wisely and sparingly
+        User[] users = new User[10];
+
+        // Loop through all users
+        for(User u: users ){
+            // Update the user's status
+            u.setStatus("active");
+        }
+
+        //refractored
+        for(User user: users ){
+            user.setStatus("active");
+        }
+
+        //6.DRY: Don't Repeat Yourself
+        User user = new User();
+        if(user.name.equals("admin")){
+            //admin-specific-code
+        }
+        if(user.name.equals("user")){
+            //user-specific-code
+        }
+        if(user.name.equals("guest")){
+            //guest-specific-code
+        }
+
+        //refractored
+        switch (user.name){
+            case "admin": //admin-specific-code
+                    break;
+            case "user": //user-specific-code
+                break;
+            case "guest": //guest-specific-code
+                break;
+        }
+
+        //7. Use Proper Indentation and Formatting
+        //line 34 for bad example and line 36 for revised example
+
+        //8. Avoid Long parameter List
+        //Line 49 for bad example
+        //Line 53 for refractored example
+        //Line 59 for class definition
+
+
+
+
+
+    }*/
+}

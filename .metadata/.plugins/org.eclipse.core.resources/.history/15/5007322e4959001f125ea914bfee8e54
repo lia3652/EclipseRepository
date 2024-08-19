@@ -1,0 +1,7 @@
+package ust.com.lambda;
+
+public interface IPrinter {
+	
+	public double getPrint(String message);
+
+}

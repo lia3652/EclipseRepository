@@ -1,0 +1,7 @@
+package ust.com.lambda;
+
+public interface IBinaryOperation {
+	
+	public double Operate(double a,double b);
+
+}

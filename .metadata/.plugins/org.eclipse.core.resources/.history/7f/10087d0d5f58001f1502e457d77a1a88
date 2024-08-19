@@ -1,0 +1,31 @@
+package ust.com.samples;
+
+public class CalculatorLamdaDemo {
+	
+	//Lambda expression
+	
+	(double x,double y)->
+	{
+		
+		 x+y;
+	     
+	}
+	
+	(double x,double y)
+	{
+		
+	    x-y;
+      
+	}
+
+	(double x,double y)
+	{
+		
+		x*y;
+		
+      
+		
+	}
+
+
+}

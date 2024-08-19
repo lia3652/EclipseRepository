@@ -1,0 +1,47 @@
+package ust.com.samples;
+
+import java.util.Scanner;
+
+
+
+public interface ABCalculate {
+	{
+
+	    public static void main(String[] args) {
+	        Scanner scanner = new Scanner(System.in);
+	        
+	        // Read input strings
+	        String A = scanner.nextLine();
+	        String B = scanner.nextLine();
+	        
+	        // Close the scanner
+	        scanner.close();
+	        
+	        // 1. Calculate and print the sum of lengths
+	        int lengthSum = A.length() + B.length();
+	        System.out.println(lengthSum);
+	        
+	        // 2. Lexicographical comparison
+	        if (A.compareTo(B) > 0) {
+	            System.out.println("Yes");
+	        } else {
+	            System.out.println("No");
+	        }
+	        
+	        // 3. Capitalize first letters and print the result
+	        String capitalizedA = capitalize(A);
+	        String capitalizedB = capitalize(B);
+	        System.out.println(capitalizedA + " " + capitalizedB);
+	    }
+	    
+	    // Helper method to capitalize the first letter of a string
+	    private static String capitalize(String str) {
+	        if (str == null || str.isEmpty()) {
+	            return str;
+	        }
+	        return str.substring(0, 1).toUpperCase() + str.substring(1).toLowerCase();
+	    }
+	}
+
+
+}
